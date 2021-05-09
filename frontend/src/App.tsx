@@ -4,6 +4,7 @@ import { Switch, Route, Redirect } from 'react-router';
 import Home from 'components/Home';
 import V1Home from 'components/v1/V1Home';
 import V2Home from 'components/v2/V2Home';
+import V3Home from 'components/v3/V3Home';
 
 const App: VFC = () => (
   <div className="container">
@@ -18,6 +19,10 @@ const App: VFC = () => (
 
       <Route exact path="/v2">
         <V2Home />
+      </Route>
+
+      <Route exact path="/v3">
+        <V3Home />
       </Route>
 
       <Redirect to="/" />

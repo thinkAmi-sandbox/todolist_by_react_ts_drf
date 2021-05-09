@@ -5,6 +5,7 @@ import Home from 'components/Home';
 import V1Home from 'components/v1/V1Home';
 import V2Home from 'components/v2/V2Home';
 import V3Home from 'components/v3/V3Home';
+import V4Home from 'components/v4/V4Home';
 
 const App: VFC = () => (
   <div className="container">
@@ -23,6 +24,10 @@ const App: VFC = () => (
 
       <Route exact path="/v3">
         <V3Home />
+      </Route>
+
+      <Route exact path="/v4">
+        <V4Home />
       </Route>
 
       <Redirect to="/" />
